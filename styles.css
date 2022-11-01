@@ -85,3 +85,7 @@ hr {
 .blog-posts .post .featured .featured-image img {
   height: 380px;
 }
+
+.navbar-menu.is-active {
+    background-color: #24272c;
+}
