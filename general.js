@@ -18,3 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 })  
+
+document.querySelectorAll('.accordion').forEach((accordion) => {
+  const header = accordion.querySelector('.card-header')
+  header.addEventListener('click', () => {
+    const group = accordion.getAttribute('data-accordion-group')
+    document.querySelectorAll(`[data-accordion-group="${group}"]`).forEach((groupAccordion) => {
+      groupAccordion.querySelector('.card-content').classList.add('is-hidden')
+    })
+
+    accordion.querySelector('.card-content').classList.remove('is-hidden')
+    
+  })
+})

@@ -89,3 +89,7 @@ hr {
 .navbar-menu.is-active {
     background-color: #24272c;
 }
+
+.is-clickable {
+  cursor: pointer;
+}
