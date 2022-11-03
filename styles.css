@@ -93,3 +93,7 @@ hr {
 .is-clickable {
   cursor: pointer;
 }
+
+.is-justify-content-center {
+  justify-content: center;
+}
